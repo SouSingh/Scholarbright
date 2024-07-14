@@ -1,0 +1,101 @@
+{
+  "name": "Scholarbright",
+  "short_name": "Scholarbright",
+  "description": "Find Scholar around you",
+  "start_url": "/?utm_source=pwa",
+  "id": "/?utm_source=pwa",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-1024-maskable.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Web",
+      "url": "/?view=Web",
+      "description": "Web search"
+    },
+    {
+      "name": "AI",
+      "url": "/?view=AI",
+      "description": "AI search"
+    },
+    {
+      "name": "Social",
+      "url": "/?view=Social",
+      "description": "Social search"
+    },
+    {
+      "name": "Videos",
+      "url": "/?view=Videos",
+      "description": "Videos search"
+    },
+    {
+      "name": "Music",
+      "url": "/?view=Music",
+      "description": "Music search"
+    },
+    {
+      "name": "Shopping",
+      "url": "/?view=Shopping",
+      "description": "Shopping search"
+    },
+    {
+      "name": "Local",
+      "url": "/?view=Local",
+      "description": "Local search"
+    },
+    {
+      "name": "News",
+      "url": "/?view=News",
+      "description": "News search"
+    },
+    {
+      "name": "Academic",
+      "url": "/?view=Academic",
+      "description": "Academic search"
+    },
+    {
+      "name": "Job",
+      "url": "/?view=Job",
+      "description": "Job search"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "country": "International",
+  "country_code": "US",
+  "categories": [
+    {
+      "name": "Web",
+      "name_trends": "Popular searches",
+      "active": true,
+      "data": [
+        {
+          "name": "Google",
+          "action": "https://www.google.com/search?q=",
+          "color": "#649fff"
+        }
+      ]
+    }
+  ]
+}
