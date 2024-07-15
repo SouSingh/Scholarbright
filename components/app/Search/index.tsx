@@ -10,7 +10,7 @@ import { IconClose, IconSend } from '../SvgIcons'
 import Tooltip from '../Tooltip'
 import SearchHeader from '../SearchHeader'
 
-export default function Search() {
+export default function Search({setSearchInput}) {
   const { locale } = useRouter()
   const {
     data,
@@ -39,7 +39,10 @@ export default function Search() {
     }
   }
   const handleFocus = () => {
+    // console.log("hello")
+    // setSearchInput(inputValue)
     refSearchInput && refSearchInput.current.focus()
+    // console.log(":::::",refSearchInput)
   }
   const handleReset = () => {
     setInputValue('')
@@ -112,6 +115,7 @@ export default function Search() {
     } else if (event.key === 'Enter') {
       event.preventDefault()
       if (isValid) {
+        setSearchInput(inputValue)
         refSearchButton.current.click()
       } else {
         handleFocus()
@@ -242,11 +246,9 @@ export default function Search() {
 
               {/* Button Search */}
               <Tooltip text={data?.t?.search ?? 'Search'} disable={isMobileViewport}>
-                <a
+                <button
                   ref={refSearchButton}
                   className={Style.searchButton}
-                  href={searchUrl}
-                  target="_blank"
                   rel="noopener"
                   onClick={
                     isValid
@@ -261,7 +263,7 @@ export default function Search() {
                 >
                   <IconSend />
                   Search
-                </a>
+                </button>
               </Tooltip>
             </div>
           </div>
