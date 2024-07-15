@@ -46,6 +46,7 @@ export default function Index() {
       title="Find Scholar around you"
       description="Scholarbright is an assistant for Find Scholar around you. Explore a healthier internet with control over algorithms, privacy, and carbon.">
       <Search setSearchInput={setSearchInput}/>
+      {response}
       <WidgetTrends />
       <Banner />
     </LayoutApp>
